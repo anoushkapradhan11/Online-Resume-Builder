@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section-header {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            margin-left: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-icon {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        #profilePIC{
+            position: absolute;
+            right: 5%;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        #icon{
+            height: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="resumeNAME">Your Name</h1>
+        <p id="role">Web Developer</p>
+        <img src="" id="profilePIC">
+        <div class="section">
+            <h2 class="section-header">Contact Information</h2>
+            <div class="section-content">
+                <div class="contact-info">
+                    <i class="contact-icon" id="icon">📞</i>
+                    <span id="phno">(123) 456-7890</span>
+                </div>
+                <div class="contact-info">
+                    <img src="https://th.bing.com/th/id/OIP.cX2oApD3MGKhH8jQgMLQWwHaHa?pid=ImgDet&w=182&h=182&c=7&dpr=1.3" id="icon">
+                    <span id="resumeEMAIL">mail</span>
+                </div>
+                <div class="contact-info">
+                    <img src="https://www.bing.com/th?id=OIP.m3Tq_Q4F9rWzqRFWn5pDAQHaHr&w=150&h=156&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" id="icon">
+                    <span id="facebook">facebook</span>
+                </div>
+                <div class="contact-info">
+                    <img src="data:image/jpeg;base64,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" id="icon">
+                    <span id="instagram">instagram</span>
+                </div>
+                <div class="contact-info">
+                    <img src="data:image/jpeg;base64,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" id="icon">
+                    <span id="linkedin">linkedin</span>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Hobbies</h2>
+            <p id="hobbies"></p>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Skills</h2>
+            <p id="skills"></p>
+        </div>
+        <div class="section">
+            <h2 class="section-header">About Me</h2>
+            <p id="desc"></p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-header"> Job Experience</h2>
+            <div class="section-content">
+                <h3> <span id="expROLE">Web Developer</span> at <span id="expCOMPANY">ABC Company</span></h3>
+                <p id="expDESC">Developed and maintained company websites, implemented new features, and ensured cross-browser compatibility.</p>
+                <p class="section-content"> <span id="fromDATE">May 2020 </span> to <span id="toDATE">Present</span></p>
+            </div>
+        </div>
+        <div>
+            <h2 class="section-header">Internship</h2>
+            <div class="section-content">
+                <h3> <span id="internshipROLE">Web Developer</span> at <span id="internshipCOMPANY">ABC Company</span></h3>
+                <p id="internshipDESC">Developed and maintained company websites, implemented new features, and ensured cross-browser compatibility.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-header">Education</h2>
+            <div class="section-content">
+                <h3 id="scTYPE">Bachelor of Science in Computer Science</h3>
+                <p id="scNAME">University Name</p>
+                <p id="scLOCATION"></p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        function formatDate(x){
+            const before = x;
+            const date = new Date(before);
+            const options = { year: 'numeric', month: 'long' };
+            const formattedDate = date.toLocaleDateString(undefined, options);
+            x = formattedDate;
+            return x;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get("name");
+            const role = urlParams.get("role");
+            const email = urlParams.get("email");
+            const desc = urlParams.get("desc");
+            const phno = urlParams.get("phno");
+            const pic = urlParams.get("pic");
+            const scTYPE = urlParams.get("scTYPE");
+            const scNAME = urlParams.get("scNAME");
+            const scLOCATION = urlParams.get("scLOCATION");
+            const expROLE = urlParams.get("expROLE");
+            const expCOMPANY = urlParams.get("expCOMPANY");
+            const expDESC = urlParams.get("expDESC");
+            const internshipROLE = urlParams.get("internshipROLE");
+            const internshipCOMPANY = urlParams.get("internshipCOMPANY");
+            const internshipDESC = urlParams.get("internshipDESC");
+            const fromDATE = formatDate(urlParams.get("fromDATE"));
+            const toDATE = formatDate(urlParams.get("toDATE"));
+            const hobbies = urlParams.get("hobbies");
+            const skills = urlParams.get("skills");
+            const facebook = urlParams.get("facebook");
+            const instagram = urlParams.get("instagram");
+            const linkedin = urlParams.get("linkedin");
+            document.getElementById("resumeNAME").innerHTML = name;
+            document.getElementById("role").innerHTML = role;
+            document.getElementById("resumeEMAIL").innerHTML = email;
+            document.getElementById("desc").innerHTML = desc;
+            document.getElementById("scTYPE").innerHTML = scTYPE;
+            document.getElementById("scNAME").innerHTML = scNAME;
+            document.getElementById("scLOCATION").innerHTML = scLOCATION;
+            document.getElementById("expROLE").innerHTML = expROLE;
+            document.getElementById("expCOMPANY").innerHTML = expCOMPANY;
+            document.getElementById("expDESC").innerHTML = expDESC;
+            document.getElementById("internshipROLE").innerHTML = internshipROLE;
+            document.getElementById("internshipCOMPANY").innerHTML = internshipCOMPANY;
+            document.getElementById("internshipDESC").innerHTML = internshipDESC;
+            document.getElementById("fromDATE").innerHTML = fromDATE;
+            document.getElementById("toDATE").innerHTML = toDATE;
+            document.getElementById("phno").innerHTML = phno;
+            document.getElementById("hobbies").innerHTML = hobbies;
+            document.getElementById("skills").innerHTML = skills;
+            document.getElementById("profilePIC").src = pic;
+            document.getElementById("facebook").innerHTML = facebook;
+            document.getElementById("instagram").innerHTML = instagram;
+            document.getElementById("linkedin").innerHTML = linkedin;
+        });
+    </script>
+</body>
+</html>

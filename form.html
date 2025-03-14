@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Form</title>
+</head>
+<body>
+    <h1>Resume Form</h1>
+    <form action="resume.html" method="get"class="form">
+        <input type="file" accept="image/*" required id="pic" name="pic">
+        <div class="name">
+
+            <h2>Personal Information</h2>
+            <span>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+            </span>
+            <span>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </span>
+            <span>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phno" placeholder="Your Phone" required>
+            </span>
+        </div>
+        <div>
+            <h2></h2>
+            <span>
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" placeholder="Enter Address" required>
+            </span>
+            <span>
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="Enter Hobbies" required>
+            </span>
+            <span>
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="Your Skills" required>
+            </span>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <h2>Education</h2>
+            <span>
+                <label for="scNAME">School Name:</label>
+                <input type="text" id="scNAME" name="scNAME" placeholder="Enter School Name" required>
+            </span>
+            <span>
+                <label for="scLOCATION">School Location:</label>
+                <input type="text" id="scLOCATION" name="scLOCATION" placeholder="Enter School Location" required>
+            </span>
+            <span>
+                <label for="scTYPE">Study Type:</label>
+                <select name="scTYPE" id="scTYPE" required>
+                    <option value="" hidden>Select Study Type</option>
+                    <option value="high-school">High School</option>
+                    <option value="Degree">Degree</option>
+                    <option value="Masters">Masters</option>
+                    <option value="phd">P.hd</option>
+                </select>
+            </span>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <h2>Job Experience</h2>
+            <span>
+                <label for="expROLE">Role:</label>
+                <input type="text" id="expROLE" name="expROLE" placeholder="Enter Job Role">
+            </span>
+            <span>
+                <label for="expCOMPANY">Company:</label>
+                <input type="text" id="expCOMPANY" name="expCOMPANY" placeholder="Enter Company Name">
+            </span>
+            <span>
+                <label for="expDESC">Description:</label>
+                <input type="text" id="expDESC" name="expDESC" placeholder="Enter Job Description">
+            </span>
+        </div>
+        <div>
+            <h2></h2>
+            <span>
+                <label for="fromDATE">From:</label>
+                <input type="month" name="fromDATE" id="fromDATE">
+            </span>
+            <span>
+                <label for="toDATE">To:</label>
+                <input type="month" name="toDATE" id="toDATE">
+            </span>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+
+            <h2>Important Links</h2>
+            <span>
+
+                <label for="facebook">Facebook:</label>
+                <input type="url" id="facebook" name="facebook" placeholder="Your Facebook URL" required>
+            </span>
+            <span>
+
+                <label for="instagram">Instagram:</label>
+                <input type="url" id="instagram" name="instagram" placeholder="Your Instagram URL" required>
+            </span>
+            <span>
+
+                <label for="linkedin">LinkedIn:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="Your LinkedIn URL" required>
+            </span>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <h2>Project Information</h2>
+            <span>
+                <label for="project">Project Name:</label>
+                <input type="text" id="project" name="project" placeholder="Enter Project Name:" required>
+            </span>
+            <span>
+                <label for="projectURL">Project URL:</label>
+                <input type="url" id="projectURL" name="projectURL" placeholder="Paste Project URL" required>
+            </span>
+            <span>
+                <label for="projectURL">Project Description:</label>
+                <input type="text" id="projectDESC" name="projectDESC" placeholder="Enter Project Description" required>
+            </span>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <h2>Internship Information</h2>
+            <span>
+                <label for="internshipROLE">Role:</label>
+                <input type="text" name="internshipROLE" id="internshipROLE" placeholder="Enter Intership Role">
+            </span>
+            <span>
+                <label for="internshipCOMPANY">Company:</label>
+                <input type="text" name="internshipCOMPANY" id="internshipCOMPANY" placeholder="Enter Internship Company">
+            </span>
+            <span>
+                <label for="internshipDESC">Description:</label>
+                <input type="text" name="internshipDESC" id="internshipDESC" placeholder="Enter Internship Description">
+            </span>
+        </div>
+            
+        <button type="submit" id="generate">Generate Resume</button>
+    </form>
+</body>
+</html>

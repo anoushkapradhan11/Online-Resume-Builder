@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Template - 2</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            padding: 0 15%;
+        }
+        .container{
+            display: flex;
+            box-shadow: 0 0 5px black;
+            overflow: hidden;
+        }
+        .side{
+            position: relative;
+            background-color:cadetblue;
+            width: 40%;
+            color: white;
+            padding-bottom: 3%;
+        }
+        h1{
+            font-size: 35px;
+        }
+        h1,h2,h3,h4,h5,p{
+            padding: 0px 20px;
+            margin-bottom: 0;
+        }
+        h2{
+            margin-top: 40px;
+        }
+        h4{
+            margin: 0;
+        }
+        h5{
+            margin-top: 0;
+            font-weight: unset;
+        }
+        hr{
+            margin-left: 15px;
+        }
+        .main{
+            padding-bottom: 10%;
+        }
+        #img{
+            position: relative;
+            text-align: center;
+        }
+        #pic{
+            border: 1px solid black;
+            width: 210px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side">
+            <h4 style="visibility: hidden;">Web Developer</h4>
+            <div id="img">
+                <img src="" id="pic">
+            </div>
+            <!-- <h1 style="visibility: hidden;">Mr. Name Kumar</h1> -->
+            <h2>Contact</h2>
+            <hr>
+            <p><strong>Email:</strong></p>
+            <h5 id="resumeEMAIL">Email</h5>
+            <p><strong>Phone No:</strong></p>
+            <h5 id="phno">Phone No</h5>
+            <p><strong>Facebook:</strong></p>
+            <h4 id="facebook">facebook-id</h4>
+            <p><strong>Instagram:</strong></p>
+            <h4 id="instagram">Instagram-id</h4>
+            <p><strong>Linkedin:</strong></p>
+            <h4 id="linkedin">Linkedin-id</h4>
+            <p><strong>Address:</strong></p>
+            <h4 id="address">address</h4>
+
+            <h2>Education:</h2>
+            <hr>
+            <p><strong id="scTYPE">Degree</strong></p>
+            <h5 id="scNAME">University Name</h5>
+            <h5 id="scLOCATION"></h5>
+
+            <h2>Skills:</h2>
+            <hr>
+            <p id="skills"></p>
+
+            <h2>Hobbies</h2>
+            <hr>
+            <p id="hobbies"></p>
+
+        </div>
+        <div class="main">
+            <h1 style="font-size: 80px;" id="resumeNAME">Subham Tripathy</h1>
+            <h4 style="font-size: 40px; margin-top: 0; margin-left: 10px;" id="role">Web Developer</h4>
+            <p style="font-size: 20px; margin-left: 10px;" id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque, temporibus numquam quo aliquid ex, velit provident officiis odio molestias fugit debitis, inventore dolorem totam laborum voluptates maiores nisi. Similique?</p>
+            <h1 style="margin-left: 10px; margin-top: 67px;">Job Experience</h1>
+            <hr>
+            <h2 style="margin-left: 10px;" id="expCOMPANY">Infosys</h2>
+            <h3 style="margin-left: 10px;" id="expROLE">Web Developer</h3>
+            <h3 style="margin-left: 10px;"><span id="fromDATE"></span> - <span id="toDATE"></span></h3>
+            <p style="margin-left: 10px;" id="expDESC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ex asperiores libero corporis sit odit minus odio magnam eum recusandae. Illo tempora et atque suscipit labore tempore odit odio fugiat?</p>
+
+            <h1 style="margin-left: 10px; margin-top: 67px;">Internship</h1>
+            <hr>
+            <h2 style="margin-left: 10px;" id="internshipCOMPANY">IBM</h2>
+            <h3 style="margin-left: 10px;" id="internshipROLE">Front-End Developer</h3>
+            <p style="margin-left: 10px;" id="internshipDESC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ex asperiores libero corporis sit odit minus odio magnam eum recusandae. Illo tempora et atque suscipit labore tempore odit odio fugiat?</p>
+
+            <h1 style="margin-left: 10px; margin-top: 67px;">Projects</h1>
+            <hr>
+            <h2 style="margin-left: 10px;" id="project">Project - 1</h2>
+            <p style="margin-left: 10px;" id="projectURL"></p>
+            <p style="margin-left: 10px;" id="projectDESC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ex asperiores libero corporis sit odit minus odio magnam eum recusandae. Illo tempora et atque suscipit labore tempore odit odio fugiat?</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+
+        function formatDate(x){
+            const before = x;
+            const date = new Date(before);
+            const options = { year: 'numeric', month: 'long' };
+            const formattedDate = date.toLocaleDateString(undefined, options);
+            x = formattedDate;
+            return x;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get("name");
+            const role = urlParams.get("role");
+            const email = urlParams.get("email");
+            const desc = urlParams.get("desc");
+            const phno = urlParams.get("phno");
+            const pic = urlParams.get("pic");
+            const scTYPE = urlParams.get("scTYPE");
+            const scNAME = urlParams.get("scNAME");
+            const scLOCATION = urlParams.get("scLOCATION");
+            const expROLE = urlParams.get("expROLE");
+            const expCOMPANY = urlParams.get("expCOMPANY");
+            const expDESC = urlParams.get("expDESC");
+            const internshipROLE = urlParams.get("internshipROLE");
+            const internshipCOMPANY = urlParams.get("internshipCOMPANY");
+            const internshipDESC = urlParams.get("internshipDESC");
+            const fromDATE = formatDate(urlParams.get("fromDATE"));
+            const toDATE = formatDate(urlParams.get("toDATE"));
+            const hobbies = urlParams.get("hobbies");
+            const skills = urlParams.get("skills");
+            const facebook = urlParams.get("facebook");
+            const instagram = urlParams.get("instagram");
+            const linkedin = urlParams.get("linkedin");
+            document.getElementById("resumeNAME").innerHTML = name;
+            document.getElementById("role").innerHTML = role;
+            document.getElementById("resumeEMAIL").innerHTML = email;
+            document.getElementById("desc").innerHTML = desc;
+            document.getElementById("scTYPE").innerHTML = scTYPE;
+            document.getElementById("scNAME").innerHTML = scNAME;
+            document.getElementById("scLOCATION").innerHTML = scLOCATION;
+            document.getElementById("expROLE").innerHTML = expROLE;
+            document.getElementById("expCOMPANY").innerHTML = expCOMPANY;
+            document.getElementById("expDESC").innerHTML = expDESC;
+            document.getElementById("internshipROLE").innerHTML = internshipROLE;
+            document.getElementById("internshipCOMPANY").innerHTML = internshipCOMPANY;
+            document.getElementById("internshipDESC").innerHTML = internshipDESC;
+            document.getElementById("fromDATE").innerHTML = fromDATE;
+            document.getElementById("toDATE").innerHTML = toDATE;
+            document.getElementById("phno").innerHTML = phno;
+            document.getElementById("hobbies").innerHTML = hobbies;
+            document.getElementById("skills").innerHTML = skills;
+            document.getElementById("img").src = pic;
+            document.getElementById("facebook").innerHTML = facebook;
+            document.getElementById("instagram").innerHTML = instagram;
+            document.getElementById("linkedin").innerHTML = linkedin;
+        });
+    </script>
+</body>
+</html>
